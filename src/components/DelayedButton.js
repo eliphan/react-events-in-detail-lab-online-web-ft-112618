@@ -3,11 +3,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 export default class DelayedButton extends React.Component {
-  setTimeOut = () => {
-    this.props.delay
-  }
+
   
   handleClick = (event) => {
+    setTimeOut = () => {
+    this.props.delay
+    }
     this.props.onDelayedClick(event);
     })
   }
