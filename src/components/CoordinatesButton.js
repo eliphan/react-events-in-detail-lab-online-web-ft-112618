@@ -5,9 +5,8 @@ import ReactDOM from 'react-dom';
 export default class CoordinatesButton extends Component {
 
   handleMouseMovement = (event) => {
-    const newMouseMovement = this.props.onReceiveCoordinates
-    this.setState ({
-      mouseCoordinates: newMouseMovement
+    this.props.onReceiveCoordinates
+
     })
   }
   
