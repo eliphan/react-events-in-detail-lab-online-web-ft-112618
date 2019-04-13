@@ -6,10 +6,10 @@ export default class DelayedButton extends React.Component {
 
   
   handleClick = (event) => {
-    setTimeout = () => {
-      (this.props.onDelayedClick(event)
-    )};
-      this.props.delay
+    setTimeout = (() => {
+      this.props.onDelayedClick(event);
+    }
+      this.props.delay)
   }
   
   render() {
@@ -18,10 +18,3 @@ export default class DelayedButton extends React.Component {
       )
   }
 }
-
-  handleClick = event => {
-    event.persist();
-    setTimeout(() => {
-      this.props.onDelayedClick(event);
-    }, this.props.delay);
-  };
