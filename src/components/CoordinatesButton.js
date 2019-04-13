@@ -11,6 +11,6 @@ export default class CoordinatesButton extends Component {
   }
   
   handleMouseMovement = () => {
-    const newMouseMovement = this.props.mouseCoordinates
+    const newMouseMovement = this.props.onReceiveCoordinates
   }
 }
