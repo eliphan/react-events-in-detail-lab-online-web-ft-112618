@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 
 export default class DelayedButton extends React.Component {
 
-  handleMouseMovement = (event) => {
+  handleClick = (event) => {
     this.props.onDelayedClick([event.clientX, event.clientY]);
     })
   }
