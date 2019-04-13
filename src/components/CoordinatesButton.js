@@ -19,7 +19,7 @@ export default class CoordinatesButton extends Component {
   
   render() {
     return(
-      <button onClick={this.handleMouseMovement}></button>
+      <button onClick={this.handleMouseMovement}>Click Me</button>
       )
   }
 }
