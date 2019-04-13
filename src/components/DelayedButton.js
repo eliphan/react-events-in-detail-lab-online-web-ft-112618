@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-export default class CoordinatesButton extends Component {
+export default class DelayedButton extends Component {
 
   handleMouseMovement = (event) => {
     this.props.onReceiveCoordinates([event.clientX, event.clientY]);
