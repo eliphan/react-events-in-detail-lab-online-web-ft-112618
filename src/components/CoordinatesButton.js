@@ -12,5 +12,14 @@ export default class CoordinatesButton extends Component {
   
   handleMouseMovement = () => {
     const newMouseMovement = this.props.onReceiveCoordinates
+    this.setState ({
+      mouseCoordinates: newMouseMovement
+    })
+  }
+  
+  render() {
+    return(
+      <button onClick={this.handleMouseMovement}></button>
+      )
   }
 }
